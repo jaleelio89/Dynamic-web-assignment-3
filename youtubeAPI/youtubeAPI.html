@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube API Integration</title>
+    <link rel="stylesheet" href="youtubeAPI.css">
+</head>
+
+<body>
+
+    <div class="search">
+        <input type="text" id="query" placeholder="Search for videos..." autocomplete="off" />
+        <ul id="suggestions"></ul>
+        <button onclick="searchVideos()">Search</button>
+    </div>
+
+    <div id="spinner" class="spinner hidden"></div>
+
+    <div class="video-container" id="video-container"></div>
+
+    <div class="load-more" id="load-more-container">
+        <button id="load-more-btn" onclick="loadMoreVideos()">Load More</button>
+    </div>
+
+    <script src="youtubeAPI.js"></script>
+</body>
+
+</html>

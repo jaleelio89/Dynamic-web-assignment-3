@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.search {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+#suggestions {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+
+#suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background: #f0f0f0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.video {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+h4 {
+    margin: 10px 0 5px;
+}
+
+p {
+    color: #555;
+}
+
+.load-more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#load-more-btn {
+    display: none;
+}
+
+.spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #FF0000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
